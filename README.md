@@ -32,3 +32,8 @@ I'll get round to uploading a compiled jar to the repo soon, it should be compat
 
 If you want to try and compile it yourself, it has jython as a dependancy
 
+## How does it work
+
+When loading the game it looks through the `/pymods` folder for `.json` files, reads them, loads the components defined in them, and registers them to the game's internal libraries. It uses Jython to load the python classes in the java.
+
+Jython does a lot of caching of files to speed things up, so the first time you run with Py4Spire it'll take quite a while to load, but after the first time you shouldn't see any difference in load speeds, it's lightning fast!
