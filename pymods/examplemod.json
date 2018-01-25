@@ -1,0 +1,16 @@
+{
+    "name":  "Example Mod",
+    "folder": "exampleMod",
+    "components": [
+        {
+            "type": "relic",
+            "file": "example_relic",
+            "name": "ExampleRelic"
+        },
+        {
+            "type": "card",
+            "file": "example_card",
+            "name": "ExampleCard"
+        }
+    ]
+}
